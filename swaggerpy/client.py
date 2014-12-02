@@ -70,7 +70,7 @@ class Operation(object):
                 else:
                     raise AssertionError(
                         "Unsupported paramType %s" %
-                        param.paramType)
+                        param['paramType'])
                 del kwargs[pname]
             else:
                 if param['required']:
